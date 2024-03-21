@@ -135,21 +135,7 @@ obj.add(2)
 obj.add(3,4)
 obj.ad(1,2,3)
 
------>abstraction
-             
-
-
-       
-
- 
-    
-
-
-
-
-
-
-
+----->abstract             
 a = 9
 b = 6
 print(a+b)
@@ -159,6 +145,128 @@ print(a._add_(b)) under method or mafic or mafic method
 int()
 print(a._sub_(b))
 len()
+
+---->Abstraction
+Tha process of hiding the implimentation details is abstrction
+
+
+
+
+
+
+
+
+
+Eg:2
+super()----->used to access the perent class method
+from abc import ABC, abtractmethod
+class c1(ABC):
+    @abtractmethod
+    def m1(self)
+    print ("This is abstract class")
+
+class c2(c1):
+    def m2(self):
+        super().m1()
+        print("Iamchild 1")
+
+def m1(self):
+    pass
+class2= c2()
+class2.m2()
+        
+Eg:3
+from abc impact ABC,abstractmethod
+class password(ABC):
+    @abstractmethid
+    pswd="charan6565"
+
+class login:
+    def validata(self,name,password):
+        if super().pwd()==passwrd:
+            print("welcome",name,'!!!')
+            print("login successfull")
+          else:
+              print("please check the passwork")
+
+      def PWd(self):
+          pass
+
+login=login()
+name= input("enter thename:")
+pwd=input("enter the password:")
+login.validata(name,Pwd)
+
+#! Encapsulation
+
+Eg:1
+class car:
+    name="BMW" # private variable
+
+C1 =CAR()
+print(c1.name)
+c1.name = "Audi"
+print(c1.name)
+    
+------>Eg:2
+accessing private data outside the class
+class c1:
+    _phone = '54635654'
+
+    def dispaly (self):
+        print(self._phone)
+
+c =c1()
+c.display()
+
+----->Eg:3
+declere private method
+class class1:
+    def m1(self):# private method
+        print("Iam private method")
+
+c=class()
+c.m1()  error
+
+nested class
+class class1:
+    class class2:
+        name = "cjhar"
+
+
+        def display(self):
+            print(self.name)
+obj1=class2()
+
+obj=class()
+obj.obj.display()
+
+----->tasks
+write code for the below task using fuction
+1.) d1 = {"shirt":1000,"part":1500,"shoes":"900","handkey":30}
+            
+        
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
         
